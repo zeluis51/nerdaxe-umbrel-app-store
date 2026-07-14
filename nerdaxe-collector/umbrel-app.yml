@@ -22,7 +22,7 @@ gallery: []
 releaseNotes: >-
   Primeira versão persistente do NerdAxe Collector para umbrelOS.
 dependencies:
-  - influxdb
+  - influxdb2
 path: ""
 defaultUsername: ""
 defaultPassword: ""
