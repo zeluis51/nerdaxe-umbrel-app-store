@@ -1,0 +1,28 @@
+manifestVersion: 1
+id: nerdaxe-collector
+name: NerdAxe Collector
+tagline: Monitora NerdAxe e Tapo no InfluxDB
+category: bitcoin
+version: "1.0.0"
+port: 8099
+icon: https://raw.githubusercontent.com/zeluis51/nerdaxe-umbrel-app-store/main/nerdaxe-collector/icon.svg
+description: >-
+  Serviço de monitoramento do NerdAxe Gamma.
+
+  Obtém métricas da API do NerdAxe, consulta o consumo elétrico
+  da tomada Tapo P110 e grava os dados no InfluxDB para exibição
+  no Grafana.
+developer: José Luís
+website: https://github.com/zeluis51/nerdaxe-umbrel-app-store
+submitter: José Luís
+submission: https://github.com/zeluis51/nerdaxe-umbrel-app-store
+repo: https://github.com/zeluis51/nerdaxe-umbrel-app-store
+support: https://github.com/zeluis51/nerdaxe-umbrel-app-store/issues
+gallery: []
+releaseNotes: >-
+  Primeira versão persistente do NerdAxe Collector para umbrelOS.
+dependencies:
+  - influxdb
+path: ""
+defaultUsername: ""
+defaultPassword: ""

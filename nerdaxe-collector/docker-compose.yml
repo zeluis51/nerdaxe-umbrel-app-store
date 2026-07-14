@@ -1,0 +1,27 @@
+services:
+  app_proxy:
+    environment:
+      APP_HOST: nerdaxe-collector_web_1
+      APP_PORT: 8080
+      PROXY_AUTH_ADD: "false"
+
+  collector:
+    image: ghcr.io/zeluis51/nerdaxe-collector:1.0.0
+    restart: on-failure
+    env_file:
+      - /home/umbrel/nerdaxe-monitoring/collector/.env
+    networks:
+      - default
+
+  web:
+    image: nginx:1.27-alpine
+    restart: on-failure
+    volumes:
+      - ./status.html:/usr/share/nginx/html/index.html:ro
+    networks:
+      - default
+
+networks:
+  default:
+    external: true
+    name: umbrel_main_network

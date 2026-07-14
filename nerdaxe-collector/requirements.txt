@@ -1,0 +1,5 @@
+requests
+python-dotenv
+influxdb-client
+plugp100
+tapo==0.9.0
